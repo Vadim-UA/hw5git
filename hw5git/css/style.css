@@ -30,6 +30,8 @@ h2{
 	font-size: 25px;
 	font-family: 'Lobster', cursive;
 	font-weight: 700;
+	color: rgb(223, 245, 101);
+	text-shadow: 3px 3px rgb(57, 28, 185);
 }
 .header{
    background-color: rgba(158, 110, 65, 0.671);
