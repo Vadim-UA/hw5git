@@ -1,0 +1,28 @@
+/* font-family: 'Gluten', cursive; */
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Anton', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@font-face {
+   font-family: "Ettielier";
+   src: url("Ettielier-Regular.woff2") format("woff2"), url("Ettielier-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Emperator Classic Pro";
+   src: url("EmperatorClassicPro-Regular.woff2") format("woff2"), url("EmperatorClassicPro-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+.headerimg {
+   text-align: center;
+}
+.headerimg img {
+   border-radius: 50px;
+}
