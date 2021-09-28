@@ -29,9 +29,12 @@
 body {
    background-color: rgb(155, 206, 219);
 }
-.heder,
+/*.heder,
 .main,
 .footer {
+   margin: 0px auto;
+}*/
+.wrapper{
    margin: 0px auto;
 }
 .header {
@@ -41,12 +44,12 @@ body {
    line-height: 70px;
    margin: 0px 0px 10px 0px;
 }
-.header__nav {
-   text-align: center;
-   vertical-align: middle;
-}
+
 .nav__element {
    display: inline-block;
+}
+.header__nav .link{
+   text-decoration: none;
 }
 .link {
    min-width: 50px;
@@ -54,6 +57,10 @@ body {
    color: #fff;
    font-family: "Caveat", cursive;
    font-size: 25px;
+}
+.header__nav {
+   text-align: center;
+   vertical-align: middle;
 }
 
 h2 {
@@ -64,6 +71,16 @@ h2 {
    text-shadow: 10px 5px 10px rgb(55, 149, 212);
    margin: 20px 0px 20px 0px;
 }
+
+h3{
+   font-family: 'Anton', sans-serif;
+   font-size: 25px;
+   color: rgb(5, 150, 101);
+   text-shadow: 10px 5px 10px rgb(55, 149, 212);
+   margin: 20px 0px 20px 0px;
+   text-decoration: overline;
+}
+
 
 /* ---------padding------------ */
 .padding {
@@ -88,14 +105,12 @@ h2 span {
 .paddbox2,
 .paddbox3,
 .paddbox4,
-.paddbox5 {
+.paddbox5,
+.paddbox6 {
    width: 400px;
-   min-height: 200px;
    background-color: rgb(164, 235, 72);
    display: inline-block;
-   vertical-align: top;
    font-size: 22px;
-   color: #000;
    font-family: "Emperator Classic Pro";
 }
 .paddbox1 {
@@ -109,6 +124,7 @@ h2 span {
    color: rgb(253, 16, 16);
    text-align: justify;
    font-weight: 700;
+   max-height: 300px;
 }
 .paddbox3 {
    padding: 20px 100px 0px 10px;
@@ -134,6 +150,13 @@ h2 span {
    display: block;
    margin: 0px auto;
 }
+.paddbox6{
+   /*display: block;*/
+   text-align: justify;
+   padding: 20px 50px 70px 90px;
+   margin: -40px 0px 0px 0px;
+}
+
 .padding__string {
    text-align: left;
    line-height: 50px;
@@ -149,7 +172,7 @@ h2 span {
 .padstring2 {
    background-color: rgb(151, 245, 73);
    font-family: "Josefin Sans", sans-serif;
-   padding: 0px 0px 0px 50px;
+   padding: 0px 380px 0px 50px;
 }
 .padstring3 {
    display: block;
@@ -176,22 +199,25 @@ h2 span {
 .margin {
    color: #fff;
    font-size: 25px;
+   margin: 0px 0px 20px 0px;
 }
+
 .margin h2 {
    text-align: center;
 }
 .margin__box div,
 .margin__box p {
-   padding: 10px;
+   padding: 15px;
 }
 .margin__box img {
    padding: 5px;
    background-color: #fff;
-   margin: 50px 30px 30px 0px;
+   margin: 50px 20px 20px 10px;
 }
 .margbox1 {
    width: 600px;
    min-height: 200px;
+   font-family: 'Caveat', cursive;
    background-color: rgb(116, 209, 173);
    margin: 0px auto 30px;
 }
@@ -217,14 +243,17 @@ h2 span {
    width: 400px;
    background-color: rgb(177, 107, 173);
    margin: 0px 0px 0px auto;
+   
 }
 .margbox5 {
    background-color: rgb(132, 92, 226);
+   color: #000;
 }
 .margbox6 {
    background-color: rgb(247, 250, 94);
    color: rgb(34, 33, 33);
    margin: -80px 0px 40px 40px;
+   color: rgb(240, 13, 13);
 }
 .margin__span1 {
    background-color: rgb(57, 175, 230);
@@ -237,34 +266,132 @@ h2 span {
    background-color: rgb(222, 224, 81);
    font-family: 'Josefin Sans', sans-serif;
    color: rgb(88, 25, 85);
-   margin: 0px 15% 13% 0px;
+   margin: 0px 0px 0px 0px;
 }
-
+.margin__span2 + img{
+   margin: 15px -40px 0px 0px;
+   background-color: rgb(40, 14, 133);
+}
+.margin__span2 + img + img{
+   background-color: rgb(216, 14, 14);
+}
+.margin__span2 + img + img + img{
+   background-color: rgb(18, 207, 11);
+   padding: 10px;
+   margin: 30px -40px 0px -90px;
+}
 .margin__p1 {
    background-color: rgb(158, 74, 147);
 }
 .margin__p2 {
    background-color: rgb(39, 143, 146);
+   margin: 0px 0px 30px 0px;
 }
-
+.margin__p3{
+   background: rgb(18, 155, 29);
+   margin: 20px;
+}
+.margin__p4 {
+   background-color: rgb(10, 79, 136);
+   margin: 0px 0px 0px 0px;
+}
 a{
    font-family: 'Dancing Script', cursive;
    font-weight: 700;
    font-size: 25px;
+   text-decoration: underline;
+   margin: 0px 0px 10px 0px;
 }
 
 /* -------------tasks---------------- */
+.tasks{
+   margin: 0px 0px 0px 40px;
+}
 .tasks h2 {
    text-align: center;
+}
+.tasks + a{
+   margin: 0px 0px 30px 0px;
+   display: inline-block;
+}
+.task1 span{
+   color: #fff;
+   font-weight: 900;
+   font-size: 25px;
+   font-family: 'Gemunu Libre', sans-serif;
+   padding: 10px;
+   margin: 10px;
+   display: block;
+}
+.tasks p{
+   color: rgb(5, 12, 17);
+   font-size: 18px;
+   font-family: 'Lobster', cursive; 
+   margin: 0px 0px 20px 0px;
+}
+.task2 div{
+   color: rgb(51, 77, 192);
+   font-family: 'Josefin Sans', sans-serif;
+   max-width: 200px;
+   max-height: 200px;
+   background-color: rgb(177, 199, 55);
+   padding: 15px;
+   display: inline-block;
+   vertical-align: top;
+   margin: 0px 0px 80px 0px;
+}
+.task3 > a{
+   display: inline-block;
+   background-color: rgb(151, 28, 28);
+   color: #fff;
+   margin: 0px 0px 30px 0px;
+   text-decoration: none;
+}
+.task4{
+   font-size: 0;
+}
+.task4 > p + p{
+   color: rgb(216, 87, 27);
+   background-color: rgb(54, 55, 109);
+   display: inline-block;
+   max-width: 100px;
+   font-family: 'Lobster', cursive;
+   margin: 0px 30px 0px 0px;
+   padding: 10px;
+   font-size: 16px;
+   overflow: scroll;
+}
+.task5 div{
+   padding: 30px;
+}
+.task5 > div{
+   background-color: rgb(64, 167, 127);
+   color: #fff;
+}
+.task5 > div + div{
+   background-color: rgb(172, 65, 65);
+   color: rgb(27, 13, 13);
+   margin: -40px 0px 0px 0px;
+}
+.task6 span{
+   font-family: 'Gemunu Libre', sans-serif;
+   color: #fff;
+   background-color: rgb(56, 73, 8);
+   max-height: 200px;
+   display: inline-block;
+   overflow: scroll;
+   padding: 10px;
+   text-align: justify;
+   margin: 0px 0px 50px 0px;
 }
 
 /* -------------footer---------------- */
 .footer {
    background-color: rgb(52, 54, 190);
    width: 100%;
-   height: 70px;
+   height: 200px;
    text-align: center;
-   line-height: 70px;
+   line-height: 200px;
 }
 .navelement {
    display: inline-block;
@@ -272,6 +399,7 @@ a{
    font-family: "Caveat", cursive;
    font-size: 22px;
 }
+
 .navlink {
    color: #fff;
 }
